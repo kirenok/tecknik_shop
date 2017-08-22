@@ -275,10 +275,10 @@ header{
     bottom: 3%;
     right: 2%; 
 }
-
 .more:hover{
     color: #309dcf;
 }
+
 .greeting{
     width: 100%;
     margin: 12px -12px;
@@ -297,10 +297,10 @@ header{
     font-size: 1.1rem;
     color: #50524e;
 }
-.greeting .more{
+.greeting.more{
     position: absolute;
     right: 1%;
-    bottom:0;
+    bottom:0%;
 }
 .photoGallery{
     width: 100%;
@@ -321,18 +321,13 @@ header{
     border-top-right-radius: 10px;
 }
 .photoGallery figure{
-   
     width: 20.5%;
     float: left;
     margin-right: 5%;
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
     
-   
-    
-    
-    
-
     /*margin-right: -0.25em;  убирает отступы между блоками*/ 
 }
  figure img{
@@ -520,21 +515,31 @@ footer p{
     margin-bottom: 20px;
 }
 
-
+@media (max-width:1120){
+    
+}
      
 
     
-@media (max-width:1160px) {
-    .photoGallery figure:nth-child(3),
-    .photoGallery figure:nth-child(5){
-      float: right;
+@media (min-width:960px) and (max-width:1161px) {
+    .photoGallery figure{
+    width: 30%;
+    margin-right: 2.5%;
+    text-align: center;
     }
-    width:40%;
-    .photoGallery figure: nth-child(2){
-        margin-left: 1.5%;
+    .photoGallery figure:first-of-type{
+     margin-left:2.5%;
     }
+    .photoGallery figure:last-child {
+    margin-left: 2.5%;
+    }
+    .greeting .more{
+        position: absolute;
+        bottom:0;
+    }
+        
 } 
-    /*dont work*/ 
+    
     
 
 
@@ -553,20 +558,83 @@ footer p{
     
     .email_Wrapper{
     width:15%; 
-    
     }
    .adress p:nth-child(2),
    .adress p:nth-child(3),
    .email p a:nth-child(1){
     font-size: 1.1rem;
     font-weight: bold;
+    }
+    .greeting .more{
+        position: absolute;
+        bottom:0;
+    }
     
+    
+}
+
+@media (min-width:830px) and (max-width:959px){
+   
+    .logo_Wrapper {
+    width: 45%;
+    margin-bottom:50px;
+    }
+    .logo{
+    width: 203px;
+    height: 55px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    }
+    .adress_Wrapper{
+    width: 35%;
+    }
+    .img_specialist_Wrapper{
+    display: none;
+    }
+    .email_Wrapper{
+    width:15%; 
+    }
+    .adress p:nth-child(2),
+    .adress p:nth-child(3),
+    .email p a:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: bold;
+    }
+    .main_article h3 a{ 
+    font-size: 1.3rem;
+    padding: 18px 0px 0px;   
+    margin-bottom: 8px;
+    }
+    .main_article p{
+    padding: 8px 3px;
+    }
+    .greeting .more{
+    position: absolute;
+    bottom: 0;
+    }
+    .greeting h3{
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+    }
+    .greeting p{
+    font-size: 1rem;        
+    }
+     .photoGallery figure{
+    width: 45%;
+    margin-right: 3%;
+    text-align: center;
+    }
+    .photoGallery figure:first-of-type{
+     margin-left:3%;
+    }
+    .photoGallery figure:nth-child(4){
+    margin-left: 3%;
     }
 
 }
 @media (min-width:481px) and (max-width:768px){
     .pageWrapper{
-        768px;
+        width:768px;
     }
     .contentWrapper{
     width: 95%;
@@ -626,71 +694,14 @@ footer p{
     .greeting p{
     font-size: 1rem;        
     }
-
-}
-@media (max-width:959px){
-    .pageWrapper{
-        768px;
+    .photoGallery figure{
+   
+    width: 40.5%;
+    float: left;
+    margin-right: 1%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     }
-    .contentWrapper{
-    width: 95%;
-    margin: -29px auto 0px auto;
-    }
-    .col-2-3{
-    width: 73%;
-    }
-    .col-1-3{
-    width: 26%;
-    }
-    .header{
-    width: 95%;    
-    }
-    .logo_Wrapper {
-    width: 45%;
-    margin-bottom:50px;
-    }
-    .logo{
-    width: 203px;
-    height: 55px;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    }
-    .adress_Wrapper{
-    width: 35%;
-    }
-    .img_specialist_Wrapper{
-    display: none;
-    }
-    .email_Wrapper{
-    width:15%; 
-    }
-    .adress p:nth-child(2),
-    .adress p:nth-child(3),
-    .email p a:nth-child(1){
-    font-size: 1.1rem;
-    font-weight: bold;
-    }
-    .main_article h3 a{ 
-    font-size: 1.3rem;
-    padding: 18px 0px 0px;   
-    margin-bottom: 8px;
-    }
-    .main_article p{
-    padding: 8px 3px;
-    }
-    .greeting .more{
-    position: absolute;
-    bottom: 3%;
-    right: 5%; 
-    }
-    .greeting h3{
-    font-size: 1.3rem;
-    padding-bottom: 8px;
-    }
-    .greeting p{
-    font-size: 1rem;        
-    }
-
 }
 /*@media (max-width:480px){
     .header{
